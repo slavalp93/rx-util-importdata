@@ -37,7 +37,7 @@
 
 ## Подготовка инсталлятора
 
-Для сблоки инсталлятора используется утилита NSIS (https://github.com/kichik/nsis).
+Для сборки инсталлятора используется утилита NSIS (https://github.com/kichik/nsis).
 В папке решения https://github.com/DirectumCompany/rx-template-importdata/tree/master/Install находится готовый конфигурационный файл DirRxInstaller.nsi для генерации инсталлятора.
 
 ## Порядок установки и использования
