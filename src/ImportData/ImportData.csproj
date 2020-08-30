@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3138E2CC-20A6-49C2-9F12-E2EFAE2135F3}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>ImportData</RootNamespace>
+    <AssemblyName>ImportData</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Common.Logging, Version=3.4.1.0, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\orpihost\Sungero\dirx_builds\Client\Application Files\DirectumRX_3_4_2_0051\Common.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Logging.Core, Version=3.4.1.0, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\orpihost\Sungero\dirx_builds\Client\Application Files\DirectumRX_3_4_2_0051\Common.Logging.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Logging.NLog41, Version=3.4.1.0, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\orpihost\Sungero\dirx_builds\Client\Application Files\DirectumRX_3_4_2_0051\Common.Logging.NLog41.dll</HintPath>
+    </Reference>
+    <Reference Include="CommonLibrary, Version=0.2.0.0, Culture=neutral, PublicKeyToken=94f059807060c795, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\orpihost\Sungero\dirx_builds\Client\Application Files\DirectumRX_3_4_2_0051\CommonLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="CommonLibrary.Caching, Version=0.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\orpihost\Sungero\dirx_builds\Client\Application Files\DirectumRX_3_4_2_0051\CommonLibrary.Caching.dll</HintPath>
+    </Reference>
+    <Reference Include="CommonLibrary.Controls, Version=0.1.0.0, Culture=neutral, PublicKeyToken=3ad75b651170cf1b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\orpihost\Sungero\dirx_builds\Client\Application Files\DirectumRX_3_4_2_0051\CommonLibrary.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="CommonLibrary.Reflection, Version=0.2.0.0, Culture=neutral, PublicKeyToken=94f059807060c795, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\orpihost\Sungero\dirx_builds\Client\Application Files\DirectumRX_3_4_2_0051\CommonLibrary.Reflection.dll</HintPath>
+    </Reference>
+    <Reference Include="CommonLibrary.ServiceModel.Client, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\orpihost\Sungero\dirx_builds\Client\Application Files\DirectumRX_3_4_2_0051\CommonLibrary.ServiceModel.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="CommonLibrary.TraceWindow, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f2dc6527c281637b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\orpihost\Sungero\dirx_builds\Client\Application Files\DirectumRX_3_4_2_0051\CommonLibrary.TraceWindow.dll</HintPath>
+    </Reference>
+    <Reference Include="DocumentFormat.OpenXml, Version=2.5.5631.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\orpihost\Sungero\DirRXCustomDev\ExternalDlls\Xml\DocumentFormat.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="NDesk.Options, Version=0.2.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\orpihost\Sungero\DirRXCustomDev\ExternalDlls\NDesk\NDesk.Options.dll</HintPath>
+    </Reference>
+    <Reference Include="NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\orpihost\Sungero\dirx_builds\Client\Application Files\DirectumRX_3_4_2_0051\NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="Sungero.ClientResources, Version=0.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\orpihost\Sungero\dirx_builds\Client\Application Files\DirectumRX_3_4_2_0051\Sungero.ClientResources.dll</HintPath>
+    </Reference>
+    <Reference Include="Sungero.Content.Client, Version=0.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\orpihost\Sungero\dirx_builds\Client\Application Files\DirectumRX_3_4_2_0051\Sungero.Content.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Sungero.Content.ClientBase, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\orpihost\Sungero\dirx_builds\Client\Application Files\DirectumRX_3_4_2_0051\Sungero.Content.ClientBase.dll</HintPath>
+    </Reference>
+    <Reference Include="Sungero.Content.ContentDataBinders, Version=0.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\orpihost\Sungero\dirx_builds\Client\Application Files\DirectumRX_3_4_2_0051\Sungero.Content.ContentDataBinders.dll</HintPath>
+    </Reference>
+    <Reference Include="Sungero.Content.Shared, Version=0.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\orpihost\Sungero\dirx_builds\Client\Application Files\DirectumRX_3_4_2_0051\Sungero.Content.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="Sungero.CoreEntities.Client, Version=0.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\orpihost\Sungero\dirx_builds\Client\Application Files\DirectumRX_3_4_2_0051\Sungero.CoreEntities.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Sungero.CoreEntities.ClientBase, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\orpihost\Sungero\dirx_builds\Client\Application Files\DirectumRX_3_4_2_0051\Sungero.CoreEntities.ClientBase.dll</HintPath>
+    </Reference>
+    <Reference Include="Sungero.CoreEntities.Shared, Version=0.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\orpihost\Sungero\dirx_builds\Client\Application Files\DirectumRX_3_4_2_0051\Sungero.CoreEntities.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="Sungero.Domain.Client, Version=0.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\orpihost\Sungero\dirx_builds\Client\Application Files\DirectumRX_3_4_2_0051\Sungero.Domain.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Sungero.Domain.ClientBase, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\orpihost\Sungero\dirx_builds\Client\Application Files\DirectumRX_3_4_2_0051\Sungero.Domain.ClientBase.dll</HintPath>
+    </Reference>
+    <Reference Include="Sungero.Domain.Interfaces">
+      <HintPath>..\Lib\Sungero.Domain.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Sungero.Domain.Shared, Version=0.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\orpihost\Sungero\dirx_builds\Client\Application Files\DirectumRX_3_4_2_0051\Sungero.Domain.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="Sungero.Metadata, Version=0.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\orpihost\Sungero\dirx_builds\Client\Application Files\DirectumRX_3_4_2_0051\Sungero.Metadata.dll</HintPath>
+    </Reference>
+    <Reference Include="Sungero.Presentation, Version=0.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\orpihost\Sungero\dirx_builds\Client\Application Files\DirectumRX_3_4_2_0051\Sungero.Presentation.dll</HintPath>
+    </Reference>
+    <Reference Include="Sungero.Presentation.CommonDataBinders, Version=0.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\orpihost\Sungero\dirx_builds\Client\Application Files\DirectumRX_3_4_2_0051\Sungero.Presentation.CommonDataBinders.dll</HintPath>
+    </Reference>
+    <Reference Include="Sungero.Reporting.Client, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\orpihost\Sungero\dirx_builds\Client\Application Files\DirectumRX_3_4_2_0051\Sungero.Reporting.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Sungero.Reporting.ClientBase, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\orpihost\Sungero\dirx_builds\Client\Application Files\DirectumRX_3_4_2_0051\Sungero.Reporting.ClientBase.dll</HintPath>
+    </Reference>
+    <Reference Include="Sungero.Reporting.Shared, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\orpihost\Sungero\dirx_builds\Client\Application Files\DirectumRX_3_4_2_0051\Sungero.Reporting.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="Sungero.Services.Shared, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\orpihost\Sungero\dirx_builds\Client\Application Files\DirectumRX_3_4_2_0051\Sungero.Services.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="Sungero.StorageServices.Shared, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\orpihost\Sungero\dirx_builds\Client\Application Files\DirectumRX_3_4_2_0051\Sungero.StorageServices.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="Sungero.Workflow.Client, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\orpihost\Sungero\dirx_builds\Client\Application Files\DirectumRX_3_4_2_0051\Sungero.Workflow.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Sungero.Workflow.ClientBase, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\orpihost\Sungero\dirx_builds\Client\Application Files\DirectumRX_3_4_2_0051\Sungero.Workflow.ClientBase.dll</HintPath>
+    </Reference>
+    <Reference Include="Sungero.Workflow.DataBinders, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\orpihost\Sungero\dirx_builds\Client\Application Files\DirectumRX_3_4_2_0051\Sungero.Workflow.DataBinders.dll</HintPath>
+    </Reference>
+    <Reference Include="Sungero.Workflow.Interfaces, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\orpihost\Sungero\dirx_builds\Client\Application Files\DirectumRX_3_4_2_0051\Sungero.Workflow.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Sungero.Workflow.Shared, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\orpihost\Sungero\dirx_builds\Client\Application Files\DirectumRX_3_4_2_0051\Sungero.Workflow.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="SungeroContentComServer, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\orpihost\Sungero\dirx_builds\Client\Application Files\DirectumRX_3_4_2_0051\SungeroContentComServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Entities\EDocs\Order.cs" />
+    <Compile Include="Logic\BusinessLogic.cs" />
+    <Compile Include="Entities\Databooks\BusinessUnit.cs" />
+    <Compile Include="Entities\Databooks\Company.cs" />
+    <Compile Include="Constants.cs" />
+    <Compile Include="Entities\EDocs\Contract.cs" />
+    <Compile Include="Entities\Databooks\Department.cs" />
+    <Compile Include="Entities\Databooks\Employee.cs" />
+    <Compile Include="Entities\Entity.cs" />
+    <Compile Include="Logic\EntityProcessor.cs" />
+    <Compile Include="Logic\EntityWrapper.cs" />
+    <Compile Include="Logic\ExcelProcessor.cs" />
+    <Compile Include="Entities\EDocs\IncomingLetter.cs" />
+    <Compile Include="Entities\EDocs\OutgoingLetter.cs" />
+    <Compile Include="Entities\Databooks\Person.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Structures.cs" />
+    <Compile Include="Entities\EDocs\SupAgreement.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="NLog.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Services.client.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
