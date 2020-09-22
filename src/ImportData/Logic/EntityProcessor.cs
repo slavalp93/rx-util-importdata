@@ -77,19 +77,18 @@ namespace ImportData
             exceptionList = entity.SaveToRX(logger, supplementEntity).ToList();
             watch.Stop();
             elapsedMs = watch.ElapsedMilliseconds;
-            if (!exceptionList.Any())
+            if (exceptionList.Any(x => x.ErrorType == Constants.ErrorTypes.Error))
+            {
+              logger.Info($"Сущность {row - 1} не импортирована");
+            }
+            else
             {
               logger.Info($"Сущность {row - 1} импортирована");
               logger.Info($"Времени затрачено на импорт сущности: {elapsedMs} мс");
               rowImported++;
             }
-            else
-            {
-              logger.Info($"Сущность {row - 1} не импортирована");
-            }
             row++;
-            }
-          
+          }
           else
           {
             var message = string.Format("Количества входных параметров недостаточно. " +
