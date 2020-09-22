@@ -32,147 +32,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Common.Logging">
-      <HintPath>..\..\Libs\Common.Logging.dll</HintPath>
-    </Reference>
-    <Reference Include="Common.Logging.Core">
-      <HintPath>..\..\Libs\Common.Logging.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="CommonLibrary">
-      <HintPath>..\..\Libs\CommonLibrary.dll</HintPath>
-    </Reference>
-    <Reference Include="CommonLibrary.Caching">
-      <HintPath>..\..\Libs\CommonLibrary.Caching.dll</HintPath>
-    </Reference>
-    <Reference Include="CommonLibrary.Controls">
-      <HintPath>..\..\Libs\CommonLibrary.Controls.dll</HintPath>
-    </Reference>
-    <Reference Include="CommonLibrary.Reflection">
-      <HintPath>..\..\Libs\CommonLibrary.Reflection.dll</HintPath>
-    </Reference>
-    <Reference Include="CommonLibrary.ServiceModel.Client">
-      <HintPath>..\..\Libs\CommonLibrary.ServiceModel.Client.dll</HintPath>
-    </Reference>
-    <Reference Include="CommonLibrary.TraceWindow">
-      <HintPath>..\..\Libs\CommonLibrary.TraceWindow.dll</HintPath>
-    </Reference>
-    <Reference Include="DocumentFormat.OpenXml, Version=2.5.5631.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Libs\ExternalDlls\Xml\DocumentFormat.OpenXml.dll</HintPath>
-    </Reference>
-    <Reference Include="NDesk.Options">
-      <HintPath>..\..\Libs\ExternalDlls\NDesk\NDesk.Options.dll</HintPath>
-    </Reference>
-    <Reference Include="NLog">
-      <HintPath>..\..\Libs\NLog.dll</HintPath>
-    </Reference>
-    <Reference Include="Sungero.ClientResources">
-      <HintPath>..\..\Libs\Sungero.ClientResources.dll</HintPath>
-    </Reference>
-    <Reference Include="Sungero.Common">
-      <HintPath>..\..\Libs\Sungero.Common.dll</HintPath>
-    </Reference>
-    <Reference Include="Sungero.Content.Client">
-      <HintPath>..\..\Libs\Sungero.Content.Client.dll</HintPath>
-    </Reference>
-    <Reference Include="Sungero.Content.ClientBase">
-      <HintPath>..\..\Libs\Sungero.Content.ClientBase.dll</HintPath>
-    </Reference>
-    <Reference Include="Sungero.Content.ContentDataBinders">
-      <HintPath>..\..\Libs\Sungero.Content.ContentDataBinders.dll</HintPath>
-    </Reference>
-    <Reference Include="Sungero.Content.Shared">
-      <HintPath>..\..\Libs\Sungero.Content.Shared.dll</HintPath>
-    </Reference>
-    <Reference Include="Sungero.CoreEntities.Client">
-      <HintPath>..\..\Libs\Sungero.CoreEntities.Client.dll</HintPath>
-    </Reference>
-    <Reference Include="Sungero.CoreEntities.ClientBase">
-      <HintPath>..\..\Libs\Sungero.CoreEntities.ClientBase.dll</HintPath>
-    </Reference>
-    <Reference Include="Sungero.CoreEntities.Shared">
-      <HintPath>..\..\Libs\Sungero.CoreEntities.Shared.dll</HintPath>
-    </Reference>
-    <Reference Include="Sungero.Cryptography.Plugin">
-      <HintPath>..\..\Libs\Sungero.Cryptography.Plugin.dll</HintPath>
-    </Reference>
-    <Reference Include="Sungero.Domain.Client">
-      <HintPath>..\..\Libs\Sungero.Domain.Client.dll</HintPath>
-    </Reference>
-    <Reference Include="Sungero.Domain.ClientBase">
-      <HintPath>..\..\Libs\Sungero.Domain.ClientBase.dll</HintPath>
-    </Reference>
-    <Reference Include="Sungero.Domain.Interfaces">
-      <HintPath>..\..\Libs\Sungero.Domain.Interfaces.dll</HintPath>
-    </Reference>
-    <Reference Include="Sungero.Domain.Shared">
-      <HintPath>..\..\Libs\Sungero.Domain.Shared.dll</HintPath>
-    </Reference>
-    <Reference Include="Sungero.Logging">
-      <HintPath>..\..\Libs\Sungero.Logging.dll</HintPath>
-    </Reference>
-    <Reference Include="Sungero.Metadata">
-      <HintPath>..\..\Libs\Sungero.Metadata.dll</HintPath>
-    </Reference>
-    <Reference Include="Sungero.Plugins">
-      <HintPath>..\..\Libs\Sungero.Plugins.dll</HintPath>
-    </Reference>
-    <Reference Include="Sungero.Plugins.Sdk">
-      <HintPath>..\..\Libs\Sungero.Plugins.Sdk.dll</HintPath>
-    </Reference>
-    <Reference Include="Sungero.Presentation">
-      <HintPath>..\..\Libs\Sungero.Presentation.dll</HintPath>
-    </Reference>
-    <Reference Include="Sungero.Presentation.CommonDataBinders">
-      <HintPath>..\..\Libs\Sungero.Presentation.CommonDataBinders.dll</HintPath>
-    </Reference>
-    <Reference Include="Sungero.Reporting.Client">
-      <HintPath>..\..\Libs\Sungero.Reporting.Client.dll</HintPath>
-    </Reference>
-    <Reference Include="Sungero.Reporting.ClientBase">
-      <HintPath>..\..\Libs\Sungero.Reporting.ClientBase.dll</HintPath>
-    </Reference>
-    <Reference Include="Sungero.Reporting.Shared">
-      <HintPath>..\..\Libs\Sungero.Reporting.Shared.dll</HintPath>
-    </Reference>
-    <Reference Include="Sungero.Services.Shared">
-      <HintPath>..\..\Libs\Sungero.Services.Shared.dll</HintPath>
-    </Reference>
-    <Reference Include="Sungero.StorageService.Client">
-      <HintPath>..\..\Libs\Sungero.StorageService.Client.dll</HintPath>
-    </Reference>
-    <Reference Include="Sungero.StorageServices.Shared">
-      <HintPath>..\..\Libs\Sungero.StorageServices.Shared.dll</HintPath>
-    </Reference>
-    <Reference Include="Sungero.Workflow.Client">
-      <HintPath>..\..\Libs\Sungero.Workflow.Client.dll</HintPath>
-    </Reference>
-    <Reference Include="Sungero.Workflow.ClientBase">
-      <HintPath>..\..\Libs\Sungero.Workflow.ClientBase.dll</HintPath>
-    </Reference>
-    <Reference Include="Sungero.Workflow.DataBinders">
-      <HintPath>..\..\Libs\Sungero.Workflow.DataBinders.dll</HintPath>
-    </Reference>
-    <Reference Include="Sungero.Workflow.Interfaces">
-      <HintPath>..\..\Libs\Sungero.Workflow.Interfaces.dll</HintPath>
-    </Reference>
-    <Reference Include="Sungero.Workflow.Shared">
-      <HintPath>..\..\Libs\Sungero.Workflow.Shared.dll</HintPath>
-    </Reference>
-    <Reference Include="SungeroContentComServer">
-      <HintPath>..\..\Libs\SungeroContentComServer.dll</HintPath>
-    </Reference>
-    <Reference Include="System" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Net.Http" />
-    <Reference Include="System.Xml" />
-    <Reference Include="WindowsBase" />
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="Entities\EDocs\Order.cs" />
     <Compile Include="Logic\BusinessLogic.cs" />
     <Compile Include="Entities\Databooks\BusinessUnit.cs" />
@@ -203,6 +62,359 @@
     <None Include="Services.client.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="ADIntegration">
+      <HintPath>..\..\Libs\ADIntegration.dll</HintPath>
+    </Reference>
+    <Reference Include="Aspose.HTML">
+      <HintPath>..\..\Libs\Aspose.HTML.dll</HintPath>
+    </Reference>
+    <Reference Include="Aspose.Words">
+      <HintPath>..\..\Libs\Aspose.Words.dll</HintPath>
+    </Reference>
+    <Reference Include="BouncyCastle, Version=1.8.5.0, Culture=neutral, PublicKeyToken=0e99375e54769942, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Libs\BouncyCastle.dll</HintPath>
+    </Reference>
+    <Reference Include="Breadcrumb, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Libs\Breadcrumb.dll</HintPath>
+    </Reference>
+    <Reference Include="CacheManager.Core, Version=1.2.0.0, Culture=neutral, PublicKeyToken=5b450b4fb65c4cdb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Libs\CacheManager.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="CacheManager.SystemRuntimeCaching, Version=1.2.0.0, Culture=neutral, PublicKeyToken=5b450b4fb65c4cdb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Libs\CacheManager.SystemRuntimeCaching.dll</HintPath>
+    </Reference>
+    <Reference Include="CommandLineArgumentsParser, Version=3.0.18.0, Culture=neutral, PublicKeyToken=16ad7bf6f4a1666c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Libs\CommandLineArgumentsParser.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Logging, Version=3.4.1.0, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Libs\Common.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Logging.Core, Version=3.4.1.0, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Libs\Common.Logging.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="CommonLibrary, Version=0.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Libs\CommonLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="CommonLibrary.Caching, Version=0.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Libs\CommonLibrary.Caching.dll</HintPath>
+    </Reference>
+    <Reference Include="CommonLibrary.Controls, Version=0.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Libs\CommonLibrary.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="CommonLibrary.Reflection, Version=0.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Libs\CommonLibrary.Reflection.dll</HintPath>
+    </Reference>
+    <Reference Include="CommonLibrary.ServiceModel.Client, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Libs\CommonLibrary.ServiceModel.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="ConfigSettings, Version=1.0.0.0, Culture=neutral, PublicKeyToken=94f059807060c795, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Libs\ConfigSettings.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v12.2, Version=12.2.6.0, Culture=neutral, PublicKeyToken=ba55acb187429b82, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Libs\DevExpress.Data.v12.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v12.2.Core, Version=12.2.6.0, Culture=neutral, PublicKeyToken=ba55acb187429b82, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Libs\DevExpress.Printing.v12.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Core.v12.2, Version=12.2.6.0, Culture=neutral, PublicKeyToken=ba55acb187429b82, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Libs\DevExpress.Xpf.Core.v12.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Docking.v12.2, Version=12.2.6.0, Culture=neutral, PublicKeyToken=ba55acb187429b82, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Libs\DevExpress.Xpf.Docking.v12.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Grid.v12.2, Version=12.2.6.0, Culture=neutral, PublicKeyToken=ba55acb187429b82, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Libs\DevExpress.Xpf.Grid.v12.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Grid.v12.2.Core, Version=12.2.6.0, Culture=neutral, PublicKeyToken=ba55acb187429b82, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Libs\DevExpress.Xpf.Grid.v12.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Layout.v12.2.Core, Version=12.2.6.0, Culture=neutral, PublicKeyToken=ba55acb187429b82, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Libs\DevExpress.Xpf.Layout.v12.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Printing.v12.2, Version=12.2.6.0, Culture=neutral, PublicKeyToken=ba55acb187429b82, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Libs\DevExpress.Xpf.Printing.v12.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Printing.v12.2.Core, Version=12.2.6.0, Culture=neutral, PublicKeyToken=ba55acb187429b82, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Libs\DevExpress.Xpf.Printing.v12.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Themes.Sungero.v12.2">
+      <HintPath>..\..\Libs\DevExpress.Xpf.Themes.Sungero.v12.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DocumentFormat.OpenXml, Version=2.5.5631.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Open XML SDK\V2.5\lib\DocumentFormat.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="FormalizeDocumentsParser">
+      <HintPath>..\..\Libs\FormalizeDocumentsParser.dll</HintPath>
+    </Reference>
+    <Reference Include="GongSolutions.Wpf.DragDrop, Version=1.0.0.0, Culture=neutral, PublicKeyToken=920bbb82639c64ef, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Libs\GongSolutions.Wpf.DragDrop.dll</HintPath>
+    </Reference>
+    <Reference Include="GostCryptography, Version=2.0.7.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Libs\GostCryptography.dll</HintPath>
+    </Reference>
+    <Reference Include="GraphX.Controls, Version=2.2.0.0, Culture=neutral, PublicKeyToken=bab23663f80c9e76, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Libs\GraphX.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="GraphX.PCL.Common, Version=2.2.0.0, Culture=neutral, PublicKeyToken=a6cdb671d651b60a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Libs\GraphX.PCL.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Hardcodet.Wpf.TaskbarNotification, Version=1.0.5.0, Culture=neutral, PublicKeyToken=5bffab150b47e11e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Libs\Hardcodet.Wpf.TaskbarNotification.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.86.5.0, Culture=neutral, PublicKeyToken=9dea7c6e17aa31ff, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Libs\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="InterLinq, Version=0.2.4367.30654, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Libs\InterLinq.dll</HintPath>
+    </Reference>
+    <Reference Include="LumenWorks.Framework.IO">
+      <HintPath>..\..\Libs\LumenWorks.Framework.IO.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\Libs\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAPICodePack, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Libs\Microsoft.WindowsAPICodePack.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAPICodePack.Shell, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Libs\Microsoft.WindowsAPICodePack.Shell.dll</HintPath>
+    </Reference>
+    <Reference Include="NDde, Version=2.1.563.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Libs\NDde.dll</HintPath>
+    </Reference>
+    <Reference Include="NDesk.Options">
+      <HintPath>..\..\Libs\NDesk.Options.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Libs\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Libs\NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="NTwain, Version=3.0.0.0, Culture=neutral, PublicKeyToken=f9f7e0c5169536c8, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Libs\NTwain.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework">
+      <HintPath>..\..\Libs\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="PdfSharp-WPF, Version=1.32.2608.0, Culture=neutral, PublicKeyToken=f94615aa0424f9eb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Libs\PdfSharp-WPF.dll</HintPath>
+    </Reference>
+    <Reference Include="QuickGraph, Version=3.6.61114.0, Culture=neutral, PublicKeyToken=f3fb40175eec2af3, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Libs\QuickGraph.dll</HintPath>
+    </Reference>
+    <Reference Include="Remotion.Linq, Version=2.2.0.0, Culture=neutral, PublicKeyToken=fee00910d6e5f53b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Libs\Remotion.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="SpecUnit">
+      <HintPath>..\..\Libs\SpecUnit.dll</HintPath>
+    </Reference>
+    <Reference Include="Spring.Aop, Version=2.0.1.45000, Culture=neutral, PublicKeyToken=65e474d141e25e07, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Libs\Spring.Aop.dll</HintPath>
+    </Reference>
+    <Reference Include="Spring.Core, Version=2.0.1.45000, Culture=neutral, PublicKeyToken=65e474d141e25e07, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Libs\Spring.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Sungero.ClientResources, Version=0.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Libs\Sungero.ClientResources.dll</HintPath>
+    </Reference>
+    <Reference Include="Sungero.Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Libs\Sungero.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Sungero.Content.Client, Version=0.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Libs\Sungero.Content.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Sungero.Content.ClientBase, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Libs\Sungero.Content.ClientBase.dll</HintPath>
+    </Reference>
+    <Reference Include="Sungero.Content.Shared, Version=0.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Libs\Sungero.Content.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="Sungero.CoreEntities.Client, Version=0.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Libs\Sungero.CoreEntities.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Sungero.CoreEntities.ClientBase, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Libs\Sungero.CoreEntities.ClientBase.dll</HintPath>
+    </Reference>
+    <Reference Include="Sungero.CoreEntities.Shared, Version=0.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Libs\Sungero.CoreEntities.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="Sungero.Cryptography.Plugin, Version=0.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Libs\Sungero.Cryptography.Plugin.dll</HintPath>
+    </Reference>
+    <Reference Include="Sungero.Domain.Client, Version=0.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Libs\Sungero.Domain.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Sungero.Domain.ClientBase, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Libs\Sungero.Domain.ClientBase.dll</HintPath>
+    </Reference>
+    <Reference Include="Sungero.Domain.Interfaces">
+      <HintPath>..\..\Libs\Sungero.Domain.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Sungero.Domain.Shared, Version=0.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Libs\Sungero.Domain.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="Sungero.Logging, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Libs\Sungero.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Sungero.Metadata, Version=0.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Libs\Sungero.Metadata.dll</HintPath>
+    </Reference>
+    <Reference Include="Sungero.Plugins, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Libs\Sungero.Plugins.dll</HintPath>
+    </Reference>
+    <Reference Include="Sungero.Plugins.Sdk, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Libs\Sungero.Plugins.Sdk.dll</HintPath>
+    </Reference>
+    <Reference Include="Sungero.Presentation, Version=0.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Libs\Sungero.Presentation.dll</HintPath>
+    </Reference>
+    <Reference Include="Sungero.Presentation.CommonDataBinders, Version=0.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Libs\Sungero.Presentation.CommonDataBinders.dll</HintPath>
+    </Reference>
+    <Reference Include="Sungero.Reporting.Client, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Libs\Sungero.Reporting.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Sungero.Reporting.ClientBase, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Libs\Sungero.Reporting.ClientBase.dll</HintPath>
+    </Reference>
+    <Reference Include="Sungero.Reporting.ClientServices, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Libs\Sungero.Reporting.ClientServices.dll</HintPath>
+    </Reference>
+    <Reference Include="Sungero.Reporting.Shared, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Libs\Sungero.Reporting.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="Sungero.Services.Shared, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Libs\Sungero.Services.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="Sungero.StorageService.Client, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Libs\Sungero.StorageService.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Sungero.StorageServices.Shared, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Libs\Sungero.StorageServices.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="Sungero.Sync1C">
+      <HintPath>..\..\Libs\Sungero.Sync1C.dll</HintPath>
+    </Reference>
+    <Reference Include="Sungero.SynerdocsExtensions">
+      <HintPath>..\..\Libs\Sungero.SynerdocsExtensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Sungero.Workflow.Client, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Libs\Sungero.Workflow.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Sungero.Workflow.ClientBase, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Libs\Sungero.Workflow.ClientBase.dll</HintPath>
+    </Reference>
+    <Reference Include="Sungero.Workflow.Interfaces, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Libs\Sungero.Workflow.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Sungero.Workflow.Shared, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Libs\Sungero.Workflow.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="SungeroContentComServer, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Libs\SungeroContentComServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Libs\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Libs\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Libs\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Abstractions, Version=5.11.1.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Libs\Unity.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Configuration, Version=5.11.1.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Libs\Unity.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Container, Version=5.11.1.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Libs\Unity.Container.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

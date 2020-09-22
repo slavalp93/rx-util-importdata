@@ -17,9 +17,9 @@ ReserveFile "ConfigParamPage.ini"
 ReserveFile "FinishPage.ini"
 ReserveFile "ShortcutPage.ini"
 
-VIProductVersion 3.4.19.1
-VIAddVersionKey FileVersion 3.4.19.1
-VIAddVersionKey ProductVersion 3.4.19.1
+VIProductVersion 3.5.21.1
+VIAddVersionKey FileVersion 3.5.21.1
+VIAddVersionKey ProductVersion 3.5.31.1
 XPStyle on
 ; Управление страницами.
 Page directory 

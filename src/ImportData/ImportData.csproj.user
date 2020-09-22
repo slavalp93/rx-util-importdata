@@ -4,5 +4,6 @@
     <StartAction>Project</StartAction>
     <StartProgram>
     </StartProgram>
+    <StartArguments>-n Administrator -p 11111 -a ImportCompanies -f "D:\ProjectsGit\rx-util-importdata\Template\Example\ImportCompanies.xlsx"</StartArguments>
   </PropertyGroup>
 </Project>
