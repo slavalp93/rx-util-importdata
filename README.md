@@ -44,12 +44,46 @@
 
 Порядок установки и использования описан в документе https://github.com/DirectumCompany/rx-util-importdata/blob/master/doc/Instructions_for_loading_data_into_DirectumRX_rus.pdf
 
-## Рекомендации по доработке утилиты (для партнеров)
+## Порядок кастомизации утилиты (для партнеров)
+Для работы требуется установленный Directum RX версии 3.3 и выше.
 
-Поскольку доступ к текущему репозиторию ограничен, для доработки утилиты под нужды проекта рекомендуется:
-1. Создать собственный репозиторий для кастомизируемой утилиты импорта (на github или не другом подобном ресурсе).
-2. Выполнить клонирование репозитория из https://github.com/DirectumCompany/rx-util-importdata в репозиторий кастомизируемой утилиты.
-3. После клонирования репозитория сделать новую ветку из ветки соответствующей версии. При выходе новой версии Directum RX, создается соответтсвующей версии ветка в репозитории https://github.com/DirectumCompany/rx-util-importdata/branches.
-4. Выполнить кастомизацию и тестирование утилиты, после чего сформировать запрос на вытягивание в ветку нужной версии.
-5. Выполнить рецензирование запроса на вытягивание с ответственным специалитом внутри вашей компании.
-6. Сформировать готовый пакет с кастомизированной утилитой.
+Установка для ознакомления
+1. Склонировать репозиторий https://github.com/DirectumCompany/rx-util-importdata.git в папку.
+2. Указать в _ConfigSettings.xml DDS:
+<block name="REPOSITORIES">
+  <repository folderName="Base" solutionType="Base" url="" /> 
+  <repository folderName="<Папка из п.1>" solutionType="Work" 
+     url="https://github.com/DirectumCompany/rx-util-importdata.git" />
+</block>
+
+Установка для использования на проекте
+Возможные варианты
+A. Fork репозитория.
+1. Сделать fork репозитория <Название репозитория> для своей учетной записи.
+2. Склонировать созданный в п. 1 репозиторий в папку.
+3. Указать в _ConfigSettings.xml DDS:
+<block name="REPOSITORIES">
+  <repository folderName="Base" solutionType="Base" url="" /> 
+  <repository folderName="<Папка из п.2>" solutionType="Work" 
+     url="https://github.com/DirectumCompany/rx-util-importdata.git" />
+</block>
+
+B. Подключение на базовый слой.
+Вариант не рекомендуется, так как при выходе версии шаблона разработки не гарантируется обратная совместимость.
+1. Склонировать репозиторий <Название репозитория> в папку.
+2. Указать в _ConfigSettings.xml DDS:
+<block name="REPOSITORIES">
+  <repository folderName="Base" solutionType="Base" url="" /> 
+  <repository folderName="<Папка из п.1>" solutionType="Base" 
+     url="https://github.com/DirectumCompany/rx-util-importdata.git" />
+  <repository folderName="<Папка для рабочего слоя>" solutionType="Work" 
+     url="<Адрес репозитория для рабочего слоя>" />
+</block>
+
+C. Копирование репозитория в систему контроля версий.
+Рекомендуемый вариант для проектов внедрения.
+1. В системе контроля версий с поддержкой git создать новый репозиторий.
+2. Склонировать репозиторий https://github.com/DirectumCompany/rx-util-importdata.git в папку с ключом --mirror.
+3. Перейти в папку из п. 2.
+4. Импортировать клонированный репозиторий в систему контроля версий командой:
+git push –mirror <Адрес репозитория из п. 1>
