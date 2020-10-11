@@ -193,16 +193,17 @@ namespace ImportData
             return exceptionList;
           }
 
-          var contracts = Enumerable.ToList(session.GetAll<Sungero.Contracts.IContract>().Where(x => x.RegistrationDate == regDateLeadingDocument && x.RegistrationNumber == regNumberLeadingDocument));
+          var contracts = Enumerable.ToList(session.GetAll<Sungero.Contracts.IContract>()
+            .Where(x => x.RegistrationDate == regDateLeadingDocument && x.RegistrationNumber == regNumberLeadingDocument && x.Counterparty.Equals(counterparty)));
           var leadingDocument = (Enumerable.FirstOrDefault<Sungero.Contracts.IContract>(contracts));
-
           if (leadingDocument == null)
           {
-            var message = string.Format("Доп.соглашение не может быть импортировано. Не найден ведущий документ с реквизитами \"Дата документа\" {0} и \"Рег. №\" {1}.", regDateLeadingDocument.ToString("d"), regNumberLeadingDocument);
+            var message = string.Format("Доп.соглашение не может быть импортировано. Не найден ведущий документ с реквизитами \"Дата документа\" {0}, \"Рег. №\" {1} и \"Контрагент\" {2}.", regDateLeadingDocument.ToString("d"), regNumberLeadingDocument, counterparty.Name);
             exceptionList.Add(new Structures.ExceptionsStruct {ErrorType = Constants.ErrorTypes.Error, Message = message});
             logger.Error(message);
             return exceptionList;
           }
+
           // HACK: Создаем 2 сессии. В первой загружаем данные, во второй создаем объект системы.
           supAgreement = session.Create<Sungero.Contracts.ISupAgreement>();
 
