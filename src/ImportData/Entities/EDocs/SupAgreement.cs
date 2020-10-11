@@ -90,7 +90,7 @@ namespace ImportData
         var businessUnit = BusinessLogic.GetBusinessUnit(session, this.Parameters[shift + 7], exceptionList, logger);
         if (businessUnit == null)
         {
-          var message = string.Format("Не найдено подразделение \"{0}\".", this.Parameters[shift + 7]);
+          var message = string.Format("Не найдена НОР \"{0}\".", this.Parameters[shift + 7]);
           exceptionList.Add(new Structures.ExceptionsStruct { ErrorType = Constants.ErrorTypes.Error, Message = message });
           logger.Error(message);
           return exceptionList;
