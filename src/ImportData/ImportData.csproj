@@ -11,6 +11,21 @@
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -41,6 +56,8 @@
     <Compile Include="Entities\Databooks\Department.cs" />
     <Compile Include="Entities\Databooks\Employee.cs" />
     <Compile Include="Entities\Entity.cs" />
+    <Compile Include="Logic\CompaniesIMVO.cs" />
+    <Compile Include="Logic\CompanyFromXMLcs.cs" />
     <Compile Include="Logic\EntityProcessor.cs" />
     <Compile Include="Logic\EntityWrapper.cs" />
     <Compile Include="Logic\ExcelProcessor.cs" />
@@ -59,6 +76,7 @@
     <None Include="NLog.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="packages.config" />
     <None Include="Services.client.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -166,7 +184,7 @@
     </Reference>
     <Reference Include="DocumentFormat.OpenXml, Version=2.5.5631.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\Program Files (x86)\Open XML SDK\V2.5\lib\DocumentFormat.OpenXml.dll</HintPath>
+      <HintPath>..\..\Libs\DocumentFormat.OpenXml.dll</HintPath>
     </Reference>
     <Reference Include="FormalizeDocumentsParser">
       <HintPath>..\..\Libs\FormalizeDocumentsParser.dll</HintPath>
@@ -222,9 +240,8 @@
     <Reference Include="NDesk.Options">
       <HintPath>..\..\Libs\NDesk.Options.dll</HintPath>
     </Reference>
-    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Libs\Newtonsoft.Json.dll</HintPath>
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -304,8 +321,9 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\Libs\Sungero.Domain.ClientBase.dll</HintPath>
     </Reference>
-    <Reference Include="Sungero.Domain.Interfaces">
-      <HintPath>..\..\Libs\Sungero.Domain.Interfaces.dll</HintPath>
+    <Reference Include="Sungero.Domain.Interfaces, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\inetpub\wwwroot\DirectumRxLocal\bin\AppliedModules\Sungero.Domain.Interfaces.dll</HintPath>
     </Reference>
     <Reference Include="Sungero.Domain.Shared, Version=0.1.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -402,6 +420,8 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\Libs\System.ValueTuple.dll</HintPath>
     </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
     <Reference Include="Unity.Abstractions, Version=5.11.1.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\Libs\Unity.Abstractions.dll</HintPath>
@@ -415,6 +435,18 @@
       <HintPath>..\..\Libs\Unity.Container.dll</HintPath>
     </Reference>
     <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.2 %28x86 и x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

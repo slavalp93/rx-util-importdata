@@ -42,7 +42,8 @@ namespace ImportData
           return exceptionList;
         }
         var legalName = this.Parameters[shift + 1].Trim();
-        var counterparty = BusinessLogic.GetConterparty(session, this.Parameters[shift + 2].Trim(), exceptionList, logger);
+				
+				var counterparty = BusinessLogic.GetConterparty(session, this.Parameters[shift + 2].Trim(), exceptionList, logger);
         if (!string.IsNullOrEmpty(this.Parameters[shift + 2].Trim()) && counterparty == null)
         {
           counterparty = BusinessLogic.CreateConterparty(session, this.Parameters[shift + 2].Trim(), exceptionList, logger);
@@ -51,7 +52,7 @@ namespace ImportData
           //logger.Warn(message);
         }
         var headCompany = Sungero.Parties.Companies.As(counterparty);
-
+				
         var nonresident = this.Parameters[shift + 3] == "Да" ? true : false;
         var tin = this.Parameters[shift + 4].Trim();
         var trrc = this.Parameters[shift + 5].Trim();

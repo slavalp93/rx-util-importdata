@@ -46,8 +46,9 @@ namespace ImportData
       public const string ImportIncomingLetters = "importincomingletters";
       public const string ImportOutgoingLetters = "importoutgoingletters";
       public const string ImportOrders = "importorders";
+			public const string ImportCompanies_IMVO = "importcompanies_imvo";
 
-      public static Dictionary<string, string> dictActions = new Dictionary<string, string>
+			public static Dictionary<string, string> dictActions = new Dictionary<string, string>
       {
         {ImportCompany, ImportCompany},
         {ImportCompanies, ImportCompanies},
@@ -56,8 +57,9 @@ namespace ImportData
         {ImportSupAgreements, ImportSupAgreements},
         {ImportIncomingLetters, ImportIncomingLetters},
         {ImportOutgoingLetters, ImportOutgoingLetters},
-        {ImportOrders, ImportOrders}
-      };
+        {ImportOrders, ImportOrders},
+				{ImportCompanies_IMVO, ImportCompanies_IMVO}
+			};
     }
 
     public class Resources

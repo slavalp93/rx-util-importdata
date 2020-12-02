@@ -4,6 +4,16 @@
     <StartAction>Project</StartAction>
     <StartProgram>
     </StartProgram>
-    <StartArguments>-n Administrator -p 11111 -a ImportCompanies -f "D:\ProjectsGit\rx-util-importdata\Template\Example\ImportCompanies.xlsx"</StartArguments>
+    <StartArguments>-n slava -p 1 -a ImportCompanies_IMVO -f "E:\org_19177304.xml"</StartArguments>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PublishUrlHistory />
+    <InstallUrlHistory />
+    <SupportUrlHistory />
+    <UpdateUrlHistory />
+    <BootstrapperUrlHistory />
+    <ErrorReportUrlHistory />
+    <FallbackCulture>ru-RU</FallbackCulture>
+    <VerifyUploadedFiles>false</VerifyUploadedFiles>
   </PropertyGroup>
 </Project>

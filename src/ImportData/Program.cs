@@ -69,6 +69,7 @@ namespace ImportData
     /// <returns>Соответствующий тип сущности.</returns>
     static void ProcessByAction(string action, string xlsxPath, Dictionary<string, string> extraParameters, NLog.Logger logger)
     {
+       
       switch (action)
       {
         case "importcompany":
@@ -83,9 +84,15 @@ namespace ImportData
           EntityProcessor.Procces(typeof(Department), xlsxPath, Constants.SheetNames.Departments, extraParameters, logger);
           break;
         case "importcompanies":
-          EntityProcessor.Procces(typeof(Company), xlsxPath, Constants.SheetNames.Companies, extraParameters, logger);
-          break;
-        case "importpersons":
+					EntityProcessor.Procces(typeof(Company), xlsxPath, Constants.SheetNames.Companies, extraParameters, logger);					
+          break;				
+				
+					// Доработка для IMVO - импорт из конкретного xml. Добавить действие в константы!
+				case "importcompanies_imvo":
+					CompaniesIMVO.Procces(xlsxPath, logger);
+					break;
+
+				case "importpersons":
           EntityProcessor.Procces(typeof(Person), xlsxPath, Constants.SheetNames.Persons, extraParameters, logger);
           break;
         case "importcontracts":
@@ -106,6 +113,7 @@ namespace ImportData
         default:
           break;
       }
+      
     }
 
     static void Main(string[] args)
@@ -113,13 +121,13 @@ namespace ImportData
       logger.Info("=========================== Process Start ===========================");
       var watch = System.Diagnostics.Stopwatch.StartNew();
 
-      #region Обработка параметров.
-
+			#region Обработка параметров.
+			
       var login = string.Empty;
       var password = string.Empty;
       var xlsxPath = string.Empty;
       var action = string.Empty;
-      var extraParameters = new Dictionary<string, string>();
+			var extraParameters = new Dictionary<string, string>();
 
       bool isHelp = false;
 
@@ -178,9 +186,41 @@ namespace ImportData
 
           #region Выполнение импорта сущностей.
           ProcessByAction(action.ToLower(), xlsxPath, extraParameters, logger);
-          #endregion
+
+				/*	
+          using (var session = new Session())
+          {
+						//litiko.UAadditions.ICompany company = litiko.UAadditions.Companies.Create();  // using (var session = new Session())
+            var company = session.Create<litiko.UAadditions.ICompany>();
+						
+						// var x = litiko.UAadditions.Companies.Create();
+						//company = company as litiko.UAadditions.ICompany;
+
+						company.Name = "Import_Test_Name";
+            company.LegalName = "Import_Test_LegalName";
+            company.EGRPOUlitiko = "111111111";
+            company.Status = Sungero.CoreEntities.DatabookEntry.Status.Active;
+            //company.TIN = "123";
+            //company.TRRC = trrc;
+            //company.PSRN = psrn;
+            //company.NCEO = nceo;
+            //company.NCEA = ncea;
+            //company.City = city;
+            //company.Region = region;
+            company.LegalAddress = "Import_Test_LegalAddress";
+            company.PostalAddress = "Import_Test_PostalAddress";
+            company.Phones = "+380951513682";
+            company.Email = "slava@litiko.com";                        
+            company.Note = "Import_Test_Note"; 
+                        
+            company.Save();
+
+            session.SubmitChanges();                        
         }
-        catch (Exception ex)
+					*/
+					#endregion
+				}
+				catch (Exception ex)
         {
           Console.WriteLine(ex.Message);
           logger.Error(ex.Message);
